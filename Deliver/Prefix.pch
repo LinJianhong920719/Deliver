@@ -1,0 +1,33 @@
+//
+//  Prefix.pch
+//  Deliver
+//
+//  Created by edz on 17/1/13.
+//  Copyright © 2017年 deliver. All rights reserved.
+//
+
+#ifndef Prefix_pch
+#define Prefix_pch
+
+// App重要参数及配置信息
+#import "ConfigHeader.h"
+
+//
+#import "ConstHeader.h"
+
+// pod第三方框架
+#import "PodsHeader.h"
+
+// 所有UI
+#import "ControllersHeader.h"
+
+#import "TPLibHeader.h"
+
+#import <CoreData/CoreData.h>
+
+//宏定义全局并发队列
+#define global_quque    dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)
+//宏定义主队列
+#define main_queue       dispatch_get_main_queue()
+
+#endif /* Prefix_pch */
