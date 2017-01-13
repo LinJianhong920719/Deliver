@@ -69,9 +69,12 @@
     if (_viewNaviBar && !_viewNaviBar.hidden)
     {
         [self.view bringSubviewToFront:_viewNaviBar];
-    }else{}
+    }else{
+        
+    }
     
     NSString *pageNo = [NSString stringWithFormat:@"%ld",(long)self.navigationController.viewControllers.count];
+    NSLog(@"navigationController的第%@页",pageNo);
     
 }
 

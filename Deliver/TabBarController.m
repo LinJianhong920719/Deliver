@@ -47,14 +47,14 @@
     nav3.tabBarItem.image = [[UIImage imageNamed:@"Cart_Normal"]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     nav3.tabBarItem.selectedImage = [[UIImage imageNamed:@"Cart_Normal_S"]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     nav3.tabBarItem.title = @"购物车";
-    nav3.tabBarItem.tag = 4;
+    nav3.tabBarItem.tag = 3;
     nav3.fullScreenPopGestureEnabled = YES;
     
     JTNavigationController *nav4 = [[JTNavigationController alloc] initWithRootViewController:[[MainViewController alloc] init]];
     nav4.tabBarItem.image = [[UIImage imageNamed:@"Mine_Normal"]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     nav4.tabBarItem.selectedImage = [[UIImage imageNamed:@"Mine_Normal_S"]imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     nav4.tabBarItem.title = @"我的";
-    nav4.tabBarItem.tag = 5;
+    nav4.tabBarItem.tag = 4;
     nav4.fullScreenPopGestureEnabled = YES;
     
     self.viewControllers = @[nav1, nav2, nav3, nav4];

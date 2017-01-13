@@ -23,18 +23,20 @@
     
     self.view.backgroundColor = ColorFromHex(0xF4F8FB);
     
-//    [PPNetworkHelper networkStatusWithBlock:^(PPNetworkStatus status) {
-//        DLog(@"status == %ld", (unsigned long)status);
-//    }];
-    // 1.一次性获取当前网络状态
-    if ([PPNetworkHelper isNetwork]) {
-        NSLog(@"有网络");
-        if ([PPNetworkHelper isWWANNetwork]) {
-            NSLog(@"手机网络");
-        }else if ([PPNetworkHelper isWiFiNetwork]){
-            NSLog(@"WiFi网络");
+
+    [PPNetworkHelper networkStatusWithBlock:^(PPNetworkStatusType networkStatus){
+        switch (networkStatus) {
+            case PPNetworkStatusUnknown:          //未知网络
+            break;
+            case PPNetworkStatusNotReachable:    //无网络
+            break;
+            case PPNetworkStatusReachableViaWWAN: //手机网络
+            break;
+            case PPNetworkStatusReachableViaWiFi: //WIFI
+            break;
         }
-    }
+    }];
+    
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -85,7 +87,7 @@
     }
     return _header;
 }
-
+#pragma mark -- 头部加载新数据(一般在controller中重写方法)
 - (void)loadNewData {
 
 }
@@ -103,6 +105,7 @@
     return _footer;
 }
 
+#pragma mark -- 尾部加载更多数据(一般在controller中重写方法)
 - (void)loadMoreData {
     
 }

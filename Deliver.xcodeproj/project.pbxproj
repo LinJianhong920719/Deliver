@@ -258,7 +258,6 @@
 		00FADF7C1E27810D00642D9A /* Deliver */ = {
 			isa = PBXGroup;
 			children = (
-				00D695ED1E28C45400515600 /* Controller */,
 				00D695E71E28C3BA00515600 /* TabBarController.h */,
 				00D695E81E28C3BA00515600 /* TabBarController.m */,
 				00D695E91E28C3BA00515600 /* BaseViewController.h */,
@@ -269,6 +268,7 @@
 				00FADF891E27810D00642D9A /* Assets.xcassets */,
 				00FADF8B1E27810D00642D9A /* LaunchScreen.storyboard */,
 				00FADF8E1E27810D00642D9A /* Info.plist */,
+				00D695ED1E28C45400515600 /* Controller */,
 				00FADF7D1E27810D00642D9A /* Supporting Files */,
 				00D695CE1E28C38300515600 /* TPLibraries */,
 				0092CD6E1E28A5D7002E7C45 /* Tools */,
@@ -405,6 +405,7 @@
 				TargetAttributes = {
 					00FADF791E27810D00642D9A = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 4GY869Z9RE;
 						ProvisioningStyle = Automatic;
 					};
 					00FADF921E27810D00642D9A = {
@@ -684,6 +685,7 @@
 			baseConfigurationReference = 37693F724752CD24D8FF4F01 /* Pods-Deliver.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4GY869Z9RE;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Deliver/Prefix.pch;
@@ -701,6 +703,7 @@
 			baseConfigurationReference = 9123F4186193D66E210C54A2 /* Pods-Deliver.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4GY869Z9RE;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Deliver/Prefix.pch;

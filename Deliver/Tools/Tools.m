@@ -85,7 +85,8 @@
     // 清除接口缓存数据
     [PPNetworkCache removeAllHttpCache];
     // 清除图片缓存
-//    [[[SDWebImageManager sharedManager] imageCache] clearDisk];
+//    [[[SDWebImageManager sharedManager] imageCache] clear];
+    
     [[[SDWebImageManager sharedManager] imageCache] clearMemory];
     // 清除系统缓存
     [[NSURLCache sharedURLCache] removeAllCachedResponses];
